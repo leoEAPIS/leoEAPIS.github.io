@@ -5,96 +5,117 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="About" content="">
+    <title>ABOUT</title>
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
-<body background="https://s1.1zoom.me/b5050/342/Geometry_Texture_Blue_Light_Blue_White_background_586221_1366x768.jpg">
-    <button><a href="index.html"><strong>INICIO</strong></a></button>
-    <button><a href="home.html"><strong>HOME</strong></a></button>
-    <button><a href="about.html"><strong>ABOUT</strong></a></button>
-    <br/>
-    <br/>
-    <img src="imagenes04.jpg" align="left" alt="consultorio">
-    <h2>Experiencia laboral:</h2>
-    <p>En el año 2012 me desempeñe como asistente dental en la clinica dental Tejada en la ciudad de tacna donde estuve laborando aproximadamente un año.Posteriormente labore como vnededor de calzados de caballero al por mayor y menor en la ciudad de Lima
-        en el centro comercial cinco continentes y actualmente estoy trabajando en el sector publico desempeñandome satisfactoriamente</p>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <img src="imagenes06.jpg" align="right" width="150" height="200" alt="">
-    <h2>Mi hobies:</h2>
-    <ol>
-        <li>Bilar</li>
-        <li>Cantar</li>
-        <li>Caminar por el campo</li>
-        <li>Ir al cine </li>
-        <li>Leer</li>
-        <li>Cocinar</li>
-    </ol>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <img src="imagenes05.jpg" align="left" width="150" height="200" alt="">
-    <br/>
-    <h2>Mi comida favorita: Ceviche</h2>
-    <p>Pocos términos pueden escribirse de tantas formas como ceviche: de acuerdo al diccionario de la Real Academia Española (RAE) resulta válido escribir ceviche, cebiche, seviche o sebiche.El concepto alude a un plato típico del continente americano que
-        se prepara con mariscos o pescados crudos y adobados con jugo de naranja agria, lima ácida o limón. Cortados en pequeños trozos, los mariscos y los pescados también suelen marinarse con ajíes, cebollas y otros ingredientes.</p>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <img src="imagenes.07.jpg" align="right" width="250" height="250" alt="">
-    <br/>
-    <br/>
-    <h2>Lugares que he visitado:</h2>
-    <ol>
-        <li>Lima</li>
-        <li>Tacna</li>
-        <li>Trujillo</li>
-        <li>Chachapoyas </li>
-        <li>Las ruinas de Kuelap</li>
-        <li>la laguna de San Nicolás en la ciudad de Cjamarca</li>
-    </ol>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <img src="imagenes08jpg.jpg" align="left" alt="">
-    <dl>
-        <h2>Cantante favorito:</h2>
-        <dt><strong>Bruno Mars</strong></dt>
-        <dd>Peter Gene Hernández (nacido el 8 de octubre de 1985), más conocido por su nombre artístico Bruno Mars, es un cantante-compositor y productor musical estadounidense de ascendencia filipina por la vía materna y puertorriqueña por la vía paterna.
-            Criado en Honolulu, Hawái por una familia de músicos, Mars empezó a hacer música a una edad temprana (a los 2 años). Tras actuar en diversos espectáculos musicales en su ciudad natal durante toda su niñez, decidió seguir una carrera musical
-            y se trasladó a Los Ángeles después de graduarse de la escuela secundaria. Mars comenzó a producir canciones para otros artistas, al unirse al equipo de producción The Smeezingtons.</dd>
-        <center><audio src="audio01.mp3" autoplay controls loop muted>Audio</audio></center>
-    </dl>
-    <br/>
-    <br/>
-    <br/>
-    <img src="imagenes09.jpg" align="right" width="200" height="250" alt="">
-    <h2>Actriz favorito:</h2>
-    <dl>
-        <dt><strong>Angelina Jolie</strong></dt>
-        <br/>
-        <dd>Actriz estadounidense conocida por su atractivo sexual y su nerviosismo, así como por su trabajo humanitario. Ganó un Oscar por su papel de apoyo como paciente mental en Girl, Interrupted (1999). Jolie, hija del actor Jon Voight, pasó gran parte
-            de su infancia en Nueva York antes de mudarse a Los Ángeles a los 11 años. Asistió al Lee Strasberg Theatre and Film Institute durante dos años y luego se matriculó en Beverly Hills High School. Más tarde estudió teatro en la Universidad de
-            Nueva York. Además de actuar en producciones teatrales, modeló y apareció en videos musicales.</dd>
-    </dl>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <center><video src="video01.mp4" autoplay controls loop muted width="500">Pelicula: Se Busca</video></center>
+<body class="body">
+    <div class="agrupar">
+        <header class="header">
+            <nav class="nav">
+                <a href="index.html" class="nav__items nav__items--cta">Inicio</a>
+                <a href="contact.html" class="nav__items">Contacto</a>
+                <a href="about.html" class="nav__items">About me</a>
+            </nav>
+            <img src="images/retrato01.jpg" align="right" alt="">
+            <br/>
+            <br/>
+            <h1 class="headerh1">Acerca De Mi:</h1>
+        </header>
+
+        <nav class="menu">
+            <button><a href="index.html">INICIO</a></button>
+            <button><a href="contact.html">CONTACTO</a></button>
+            <button><a href="about.html">ABOUT ME</a></button>
+        </nav>
+
+        <section class="seccion">
+
+            <article>
+                <img class="imgLaboral" src="images/imagenes04.jpg" align="right" alt="">
+                <h2>Experiencia laboral</h2>
+                <br/>
+                <ul>
+                    <li>
+                        En ocutbre del 2014 labore como supervisor de almacen en la empresa de calzados de caballero y dama el Sarco en la ciudad de Lima, donde pude hacerme cargo de la supervicion de calidad de producto y el control de entradas y salidas de la mercancia.
+                    </li>
+                    <li>
+                        Entre mayo de 2012 y setiembre de 2014 me desempeñe como asistente dental en la clinica dental Tejada en la ciudad de Tacna. Durante esta experiencia desarrolle distintas habilidades con respecto a la atencion de pacientes.
+                    </li>
+                </ul>
+            </article>
+
+            <article>
+                <h2>¿Cuales son mis pasatiempos?</h2>
+                <br/>
+                <p>
+                    Uno de mis pasatiempos que mas me gusta realizar es bailar todo tipo de danzas contumbristas ya que de esta manera estoy realizando actividad fisica y a la vez estoy aprendiendo las costumbres de nuestro querido pais. Tambien me guasta realizar caminatas
+                    por el campo, de esta manera estoy en contacto con la naturaleza como una manera de distraccion mental y asi salir del estres q nos genera las ciudades. Por ultimo soy cinefilo es decir me encanta ir a ver peliculas en el cine especialmente
+                    las de ciencia ficcion y comedia.
+                </p>
+                <br/>
+                <center><video src="images/video02.mp4" align="right" autoplay controls muted loop></video></center>
+            </article>
+
+            <article>
+                <img class="imgLugares" src="images/imagenes.07.jpg" align="right" alt="">
+                <h2>Lugares que he visitado</h2>
+                <br/>
+                <p>
+                    En estos ultimos años he visitado a diferentes regiones de mi pais uno de ellos es Tacna, es una ciudad muy hermosa con habitantes cariñosos y una excelente gastronomia, tambien conozco la ciudad de la eterna primavera Trujillo es uno de mis lugares favoritos
+                    ya que calidez de sus habitantes es grandiosa y tambien sin dejar de lado sus lugres turisticos. en el año 2018 tuve la oportunidad de realizar un viaje de aprendizaje a la cuidad de Chachaoyas en donde ralizamos atividades de turistas
+                    como visitar las ruins de Kuelap, fue unas de las esperiencias mas gratas que he pasado en compañia de mis amigos y por ultimo he visitado a la ciudad de Lima la ciudad de los reyes, es un buen punto turistico a la cual uno no puede
+                    dejar de visitar.
+                </p>
+            </article>
+
+            <article>
+                <h2>Mi Actriz favorito:</h2>
+                <img class="imgActriz" src="images/imagenes09.jpg" align="right" alt="">
+                <dl>
+                    <br/>
+                    <dt><strong>Angelina Jolie</strong></dt>
+                    <dd>Actriz estadounidense conocida por su atractivo sexual y su nerviosismo, así como por su trabajo humanitario. Ganó un Oscar por su papel de apoyo como paciente mental en Girl, Interrupted (1999). Jolie, hija del actor Jon Voight, pasó
+                        gran parte de su infancia en Nueva York antes de mudarse a Los Ángeles a los 11 años. Asistió al Lee Strasberg Theatre and Film Institute durante dos años y luego se matriculó en Beverly Hills High School. Más tarde estudió teatro
+                        en la Universidad de Nueva York. Además de actuar en producciones teatrales, modeló y apareció en videos musicales.
+                    </dd>
+                </dl>
+                <br/>
+                <center><video src="images/video01.mp4" align="right" autoplay controls loop muted></video></center>
+            </article>
+
+        </section>
+
+        <aside class="columna">
+            <br/>
+            <h2>Fotos de recuerdo:</h2>
+            <br/>
+            <p>1.-Algunas fotos de recuerdo del año 2020</p>
+            <br/>
+            <center><img src="images/imgrecuerdo1.jpg" alt=""></center>
+            <br/>
+            <center><time class="tiempo" datetime="22-08-2020">domingo 22 de agosto del 2020</time></center>
+            <br/>
+            <br/>
+            <p>2.-Algunas fotos de recuerdo del año 2019</p>
+            <br/>
+            <center><img src="images/imgrecuerdo2.jpg" alt=""></center>
+            <br/>
+            <center><time class="tiempo" datetime="28-06-2019">lunes 28 de junio del 2019</time></center>
+            <br/>
+        </aside>
+
+        <footer class="pie">
+            <p>CONTACTAME: LEOPODLO ZELADA</p>
+            <a href="http://facebook.com"><img src="images/facebook.jpg" alt=""></a>
+            <h3>@COPYRIGTTH 2021 TODOS LOS DERECHOS RESERVADOS // Leopoldo Zelada"</h3>
+            <address><a href="http://google.com">Visita Google</a></address>
+        </footer>
+    </div>
+
     <script src="" async defer></script>
-    <br/>
-    <a href="index.html">Inicio</a>
-    <a href="home.html">Home</a>
-    <a href="contact.html">Contact</a>
 </body>
 
 </html>
