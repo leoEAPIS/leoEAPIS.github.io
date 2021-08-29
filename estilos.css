@@ -64,6 +64,7 @@
     }
     
     .header img {
+        float: right;
         margin-bottom: 30px;
         height: 150px;
         width: 150px;
@@ -580,8 +581,50 @@
         text-align: left;
     }
     
-    .container-fluid {}
-    
     .articulo-a {
         background: url(images/fondo09.jpg);
+    }
+    /*=====================carrusel contacto==============================*/
+    
+     :root {
+        --dark: #161910;
+        --dark-x: #1e2126;
+        --light: #ffffff;
+    }
+    
+    .body02 {
+        background-color: var(--dark-x);
+        font-family: 'Spartan', sans-serif;
+        font-weight: 300;
+        color: var(--light);
+    }
+    
+    .form-control,
+    .btn {
+        min-height: 3.125rem;
+        line-height: initial;
+    }
+    
+    .img-1 {
+        background-image: url('images/carrusel01.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .img-2 {
+        background-image: url('/images/carrusel02.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .img-3 {
+        background-image: url('/images/carrusel03.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .img-fluid {
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
     }

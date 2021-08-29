@@ -17,17 +17,16 @@
 
 </head>
 
-<body class="body">
+<body class="body02">
     <div>
         <header class="header">
 
-            <nav class="nav;">
+            <nav class="nav">
                 <a href="index.html" class="nav__items nav__items--cta">Inicio</a>
                 <a href="contact.html" class="nav__items">Contacto</a>
                 <a href="about.html" class="nav__items">About me</a>
             </nav>
-
-            <img src="images/retrato01.jpg" align="right" alt="">
+            <img src="images/retrato01.jpg" class="img-header" alt="">
             <br/>
             <br/>
             <h1 class="contactoh1 d-none d-md-block">Hola, Bienvenido a mi Página Web</h1>
@@ -35,7 +34,9 @@
         <br>
         <!--=======================bootrap menu============================================-->
         <header>
+
             <nav class="navbar navbar-expand-lg navbar-light bg-light p-3" id="menu">
+
                 <div class="container-fluid">
 
                     <a class="navbar-brand" href="#">
@@ -81,53 +82,119 @@
 
 
         <!--================================= formulario con bootstrap================================-->
-        <section class="formulario justify-content-center">
-            <div class="d-flex align-items-end min-vh-100">
-                <div class="px-lg-5 pt-lg-4 pb-lg-3 p-4 w-100 mb-auto">
-                    <img src="img/foto_leo.jpg" class="img-fluid" alt="">
+
+
+        <br>
+        <br>
+
+        <section>
+            <!-- formulario -->
+            <div class="row g-0">
+
+                <div class="col-lg-6 d-none d-flex d-lg-block">
+
+                    <!-- Carrosel-->
+
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item img-1 min-vh-100 active">
+
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="font-wight-bold">Nunca dejes que tus emociones dominen tu inteligencia</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item img-2 min-vh-100">
+
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Actúa como si lo que haces marca la diferencia. Lo hace.</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item img-3 min-vh-100">
+
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Para tener éxito en la vida, necesitas dos cosas: ignorancia y confianza.</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+                    <!--===========================================-->
+
                 </div>
-                <div class="px-lg-5 py-lg-4 p-4 w-100 align-self-center">
-                    <h1 class="font-weight-bold mb-4">Contáctanos</h1>
-                    <form class="mb-5">
 
-                        <div class="mb-4">
-                            <label for="exampleInputEmail1" class="form-label font-weight-bold">Nombre</label>
-                            <input type="email" class="form-control bg-dark-x border-0 mb-2" placeholder="Ingresa tu nombre y apellidos" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">Es de caracter obligatorio</div>
+
+
+
+                <div class="col-lg-6 d-flex flex-column align-items-end min-vh-100">
+                    <div class="px-lg-5 pt-lg-4 pb-lg-3 p-4 w-100 mb-auto">
+                        <img src="images/foto_leo.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="px-lg-5 py-lg-4 p-4 w-100 align-self-center">
+                        <h1 class="font-weight-bold mb-4">Contáctanos</h1>
+                        <form class="mb-5">
+
+                            <div class="mb-4">
+                                <label for="exampleInputEmail1" class="form-label font-weight-bold">Nombre</label>
+                                <input type="email" class="form-control bg-dark-x border-0 mb-2" placeholder="Ingresa tu nombre y apellidos" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">Es de caracter obligatorio</div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="exampleInputEmail1" class="form-label font-weight-bold">Email</label>
+                                <input type="email" class="form-control bg-dark-x border-0 mb-2" placeholder="Ingresa tu email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">¿Has olvidado tu correo electrónico?</div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="exampleInputPassword1" class="form-label font-weight-bold">Telefono</label>
+                                <input type="password" class="form-control bg-dark-x border-0 mb-2" placeholder="Ingresa tu numero telefónico" id="exampleInputPassword1">
+                                <a href="#" id="emailHelp" class="form-text text-muted text-decoration-none">Es opcional</a>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="exampleInputPassword1" class="form-label font-weight-bold">Mensaje</label>
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                <textarea class="form-control" id="message" name="message" placeholder="Escríbe aqui su mensaje" rows="7"></textarea>
+
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100">ENVIAR</button>
+                        </form>
+                        <p class="font-weight-bold text-center text-muted">Puedes contactarnos por:</p>
+
+                        <div class="d-flex justify-content-around">
+                            <button type="submit" class="btn btn-outline-light flex-grow-1 m-1"><i class="fab fa-google lead mr-3"></i> Google</button>
+                            <button type="submit" class="btn btn-outline-light flex-grow-1 m-1"><i class="fab fa-facebook-f lead mr-3"></i> Facebook</button>
                         </div>
-
-                        <div class="mb-4">
-                            <label for="exampleInputEmail1" class="form-label font-weight-bold">Email</label>
-                            <input type="email" class="form-control bg-dark-x border-0 mb-2" placeholder="Ingresa tu email" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">¿Has olvidado tu correo electrónico?</div>
-                        </div>
-
-                        <div class="mb-4">
-                            <label for="exampleInputPassword1" class="form-label font-weight-bold">Telefono</label>
-                            <input type="password" class="form-control bg-dark-x border-0 mb-2" placeholder="Ingresa tu numero telefónico" id="exampleInputPassword1">
-                            <a href="#" id="emailHelp" class="form-text text-muted text-decoration-none">Es opcional</a>
-                        </div>
-
-                        <div class="mb-4">
-                            <label for="exampleInputPassword1" class="form-label font-weight-bold">Mensaje</label>
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
-                            <textarea class="form-control" id="message" name="message" placeholder="Escríbe aqui su mensaje" rows="7"></textarea>
-
-                        </div>
-
-                        <button type="submit" class="btn btn-primary w-100">ENVIAR</button>
-                    </form>
-                    <p class="font-weight-bold text-center text-muted">Puedes contactarnos por:</p>
-
-                    <div class="d-flex justify-content-around">
-                        <button type="submit" class="btn btn-outline-light flex-grow-1 m-1"><i class="fab fa-google lead mr-3"></i> Google</button>
-                        <button type="submit" class="btn btn-outline-light flex-grow-1 m-1"><i class="fab fa-facebook-f lead mr-3"></i> Facebook</button>
                     </div>
                 </div>
-                <div class="text-center px-lg-5 pt-lg-3 pb-lg-4 p-4 w-100 mt-auto">
-                    <p class="d-inline-block mb-0">¿Todavia no tienes una cuenta?</p> <a href="#" class="text-light font-weight-bold text-decoration-none">Crea una ahora</a>
-                </div>
+
             </div>
+        </section>
+
+
+
+
+
+
+        <section class="formulario justify-content-center">
+
+
+
+
         </section>
 
         <!--=================================================================-->
@@ -141,18 +208,18 @@
             <div class="container">
                 <nav class="row justify-content-center">
                     <!-- logo-->
-                    <a href="#" class=" col-12 col-md-3 text-reset text-uppercasee d-flex align-items-center justify-content-center text-decoration-none mb-3 mb-md-0">
+                    <a href="#" class=" col-12 col-md-4 text-reset text-uppercasee d-flex align-items-center justify-content-center text-decoration-none mb-3 mb-md-0">
                         <img src="images/foto_leo.jpg" alt="" class="img-logo mr-2 me-3"> Leopoldo Zelada Zelada
                     </a>
                     <!-- menu-->
-                    <ul class="col-5 col-md-3 list-unstyled">
+                    <ul class="col-5 col-md-4 list-unstyled">
                         <li class="font-weight-bold text-uppercase">Menu</li>
                         <li><a href="index.html" class="text-reset text-decoration-none">Inicio</a></li>
                         <li><a href="contact.html" class="text-reset text-decoration-none">Contacto</a></li>
                         <li><a href="about.html" class="text-reset text-decoration-none">About</a></li>
                     </ul>
                     <!-- redes sociales-->
-                    <ul class="col-5 col-md-3 list-unstyled ">
+                    <ul class="col-5 col-md-4 list-unstyled ">
                         <li class="font-weight-bold text-uppercase">Redes Sociales</li>
                         <li class="d-flex justify-content-between">
                             <a href="https://www.facebook.com/leopoldo.zeladazelada" class="text-reset"><i class="fab fa-facebook-f"></i></a>
