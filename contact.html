@@ -9,13 +9,19 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="estilos.css">
+
+    <link rel="stylesheet" href="icomoon/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Secular+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/daeff0477c.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body class="body">
     <div>
         <header class="header">
 
-            <nav class="nav">
+            <nav class="nav;">
                 <a href="index.html" class="nav__items nav__items--cta">Inicio</a>
                 <a href="contact.html" class="nav__items">Contacto</a>
                 <a href="about.html" class="nav__items">About me</a>
@@ -24,43 +30,174 @@
             <img src="images/retrato01.jpg" align="right" alt="">
             <br/>
             <br/>
-            <h1 class="contactoh1">Hola, Bienvenido a mi Página Web</h1>
+            <h1 class="contactoh1 d-none d-md-block">Hola, Bienvenido a mi Página Web</h1>
         </header>
-        <nav class="menu">
-            <button><a href="index.html">INICIO</a></button>
-            <button><a href="contact.html">CONTACTO</a></button>
-            <button><a href="about.html">ABOUT ME</a></button>
-        </nav>
-        <main>
-            <section class="section01">
-                <form class="formulario" action="">
+        <br>
+        <!--=======================bootrap menu============================================-->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light p-3" id="menu">
+                <div class="container-fluid">
 
-                    <h2>CONTACTO</h2>
+                    <a class="navbar-brand" href="#">
+                        <span class="text-primary fs-5 fw-bold">SLZZ</span>
+                    </a>
 
-                    <input type="text" name="Nombre" placeholder="Nombre">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    
+                        <span class="navbar-toggler-icon"></span>
+        
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                    <input type="text" name="Correo" placeholder="Correo">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                    <input type="text" name="Telefono" placeholder="Telefono">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
 
-                    <textarea name="mensaje" placeholder="Escribir aquí su mensaje"></textarea>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contacto</a>
+                            </li>
 
-                    <input type="botton" value="ENVIAR" id="boton">
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About me</a>
+                            </li>
 
-                </form>
-            </section>
+                        </ul>
+
+                        <form class="d-flex ">
+
+                            <input class="form-control me-2" type="email" placeholder="Correo Electronico" aria-label="email">
+                            <button class="btn btn-primary  btn-primary-outline-success" type="button">Suscribete</button>
+
+                        </form>
+
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--===================================================================-->
 
 
-        </main>
+        <!--================================= formulario con bootstrap================================-->
+        <section class="formulario justify-content-center">
+            <div class="d-flex align-items-end min-vh-100">
+                <div class="px-lg-5 pt-lg-4 pb-lg-3 p-4 w-100 mb-auto">
+                    <img src="img/foto_leo.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="px-lg-5 py-lg-4 p-4 w-100 align-self-center">
+                    <h1 class="font-weight-bold mb-4">Contáctanos</h1>
+                    <form class="mb-5">
+
+                        <div class="mb-4">
+                            <label for="exampleInputEmail1" class="form-label font-weight-bold">Nombre</label>
+                            <input type="email" class="form-control bg-dark-x border-0 mb-2" placeholder="Ingresa tu nombre y apellidos" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">Es de caracter obligatorio</div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="exampleInputEmail1" class="form-label font-weight-bold">Email</label>
+                            <input type="email" class="form-control bg-dark-x border-0 mb-2" placeholder="Ingresa tu email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">¿Has olvidado tu correo electrónico?</div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="exampleInputPassword1" class="form-label font-weight-bold">Telefono</label>
+                            <input type="password" class="form-control bg-dark-x border-0 mb-2" placeholder="Ingresa tu numero telefónico" id="exampleInputPassword1">
+                            <a href="#" id="emailHelp" class="form-text text-muted text-decoration-none">Es opcional</a>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="exampleInputPassword1" class="form-label font-weight-bold">Mensaje</label>
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                            <textarea class="form-control" id="message" name="message" placeholder="Escríbe aqui su mensaje" rows="7"></textarea>
+
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100">ENVIAR</button>
+                    </form>
+                    <p class="font-weight-bold text-center text-muted">Puedes contactarnos por:</p>
+
+                    <div class="d-flex justify-content-around">
+                        <button type="submit" class="btn btn-outline-light flex-grow-1 m-1"><i class="fab fa-google lead mr-3"></i> Google</button>
+                        <button type="submit" class="btn btn-outline-light flex-grow-1 m-1"><i class="fab fa-facebook-f lead mr-3"></i> Facebook</button>
+                    </div>
+                </div>
+                <div class="text-center px-lg-5 pt-lg-3 pb-lg-4 p-4 w-100 mt-auto">
+                    <p class="d-inline-block mb-0">¿Todavia no tienes una cuenta?</p> <a href="#" class="text-light font-weight-bold text-decoration-none">Crea una ahora</a>
+                </div>
+            </div>
+        </section>
+
+        <!--=================================================================-->
+
+
         <center><audio src="images/audio01.mp3" autoplay controls muted loop></audio></center>
-        <footer class="pie">
-            <p>CONTACTAME: LEOPODLO ZELADA</p>
-            <a href="http://facebook.com"><img src="images/facebook.jpg" alt=""></a>
-            <h3>@COPYRIGTTH 2021 TODOS LOS DERECHOS RESERVADOS // Leopoldo Zelada"</h3>
-            <address><a href="http://google.com">Visita Google</a></address>
+
+        <!--================================= footer con bootstrap================================-->
+        <footer class="pie bg-dark text-black">
+
+            <div class="container">
+                <nav class="row justify-content-center">
+                    <!-- logo-->
+                    <a href="#" class=" col-12 col-md-3 text-reset text-uppercasee d-flex align-items-center justify-content-center text-decoration-none mb-3 mb-md-0">
+                        <img src="images/foto_leo.jpg" alt="" class="img-logo mr-2 me-3"> Leopoldo Zelada Zelada
+                    </a>
+                    <!-- menu-->
+                    <ul class="col-5 col-md-3 list-unstyled">
+                        <li class="font-weight-bold text-uppercase">Menu</li>
+                        <li><a href="index.html" class="text-reset text-decoration-none">Inicio</a></li>
+                        <li><a href="contact.html" class="text-reset text-decoration-none">Contacto</a></li>
+                        <li><a href="about.html" class="text-reset text-decoration-none">About</a></li>
+                    </ul>
+                    <!-- redes sociales-->
+                    <ul class="col-5 col-md-3 list-unstyled ">
+                        <li class="font-weight-bold text-uppercase">Redes Sociales</li>
+                        <li class="d-flex justify-content-between">
+                            <a href="https://www.facebook.com/leopoldo.zeladazelada" class="text-reset"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/leopoldozeladazelada/" class="text-reset"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/foryou?is_copy_url=1&is_from_webapp=v1" class="text-reset"><i class="fab fa-tiktok"></i></a>
+                            <a href="http://google.com" class="text-reset"><i class="fab fa-google"></i></a>
+                        </li>
+                    </ul>
+
+                    <h5>@COPYRIGTTH 2021 todos los derechos reservados // Leopoldo Zelada"</h5>
+                    <address><a href="http://google.com">Visita Google</a></address>
+
+                </nav>
+            </div>
         </footer>
+        <!--=============================================================-->
 
     </div>
+
+    <!--====================== barra social fija===================================-->
+
+    <div>
+        <section class="content">
+            <div class="social">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/leopoldo.zeladazelada" target="_blank" class="icon-facebook"> </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/leyser_montenegro/ " target="_blank" class="icon-instagram"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCAv5Wk734meC1em2TeJgcLQ?view_as=subscriber " target="_blank" class="icon-youtube"></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/leoEAPIS" target="_blank" class="icon-github"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <!-- ==========================================================-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
 
     <script src="" async defer></script>
 </body>
