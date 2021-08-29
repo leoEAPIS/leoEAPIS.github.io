@@ -41,7 +41,7 @@
     
     .header {
         height: 250px;
-        background: url(images/fondo09.jpg)no-repeat;
+        background: url(/images/fondo09.jpg)no-repeat;
         background-size: cover;
         padding: 20px;
         overflow: hidden;
@@ -171,7 +171,7 @@
     
     .pie {
         clear: both;
-        background: url(images/fondo09.jpg);
+        background: url(/images/fondo09.jpg);
         overflow: hidden;
         padding: 5px;
         margin: 10px 0;
@@ -285,7 +285,7 @@
     
     .hero {
         height: 100vh;
-        background-image: var(--background), url(images/imagenprincipal.jpg);
+        background-image: var(--background), url(/images/imagenprincipal.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -422,7 +422,7 @@
     
     .projects {
         padding: 15px;
-        background-image: url(images/fondo09.jpg);
+        background-image: url(/images/fondo09.jpg);
         width: 100%;
     }
     
@@ -476,7 +476,7 @@
     /*===========Menu====================================================*/
     
     #menu {
-        background: url(images/fondo09.jpg);
+        background: url(/images/fondo09.jpg);
     }
     
     #menu li>a {
@@ -582,7 +582,7 @@
     }
     
     .articulo-a {
-        background: url(images/fondo09.jpg);
+        background: url(/images/fondo09.jpg);
     }
     /*=====================carrusel contacto==============================*/
     
@@ -606,7 +606,7 @@
     }
     
     .img-1 {
-        background-image: url('images/carrusel01.jpg');
+        background-image: url('/images/carrusel01.jpg');
         background-size: cover;
         background-position: center;
     }
