@@ -1,6 +1,30 @@
 let flag = 1;
 
-
+function colorear() {
+    if (flag) {
+        document.getElementById('an').style.background = "red";
+        document.getElementById('fn').style.background = "red";
+        document.getElementById('ap').style.background = "red";
+        document.getElementById('am').style.background = "red";
+        document.getElementById('n').style.background = "red";
+        document.getElementById('lon').style.background = "blue";
+        document.getElementById('ed').style.background = "blue";
+        document.getElementById('ml').style.background = "blue";
+        document.getElementById('changecolor').style.background = "blue"
+        flag = 0;
+    } else {
+        document.getElementById('an').style.background = "blue";
+        document.getElementById('fn').style.background = "blue";
+        document.getElementById('ap').style.background = "blue";
+        document.getElementById('am').style.background = "blue";
+        document.getElementById('n').style.background = "blue";
+        document.getElementById('lon').style.background = "red";
+        document.getElementById('ed').style.background = "red";
+        document.getElementById('ml').style.background = "red";
+        document.getElementById('changecolor').style.background = "red"
+        flag = 1;
+    }
+}
 
 function extraer() {
     let nombre = document.getElementById('apellidonombre').value;
